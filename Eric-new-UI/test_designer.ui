@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NumberButton</class>
+ <widget class="QMainWindow" name="NumberButton">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1685</width>
+    <height>1290</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>羽毛球测速软件</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="track_label">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>490</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2000</width>
+      <height>1500</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab_calibration">
+     <attribute name="title">
+      <string>Calibration</string>
+     </attribute>
+     <widget class="QLabel" name="img_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>960</width>
+        <height>540</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>1920</width>
+        <height>1080</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calibration_button">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>570</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calibration</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_showresult">
+     <attribute name="title">
+      <string>Show Result</string>
+     </attribute>
+     <widget class="GLViewWidget" name="w">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>700</width>
+        <height>500</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="track_name">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>720</y>
+        <width>630</width>
+        <height>135</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>轨迹信息</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="show_court_2">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>900</y>
+        <width>210</width>
+        <height>75</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>显示落点分布</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="video_label_2">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>50</y>
+        <width>720</width>
+        <height>405</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>1920</width>
+        <height>1080</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="player_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>510</y>
+        <width>257</width>
+        <height>33</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="type_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>1300</x>
+        <y>510</y>
+        <width>257</width>
+        <height>33</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="track_listWidget">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>580</y>
+        <width>210</width>
+        <height>285</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="MplWidget" name="plt_widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>590</y>
+        <width>411</width>
+        <height>381</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Syncro</string>
+     </attribute>
+     <widget class="QLabel" name="video_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>960</width>
+        <height>540</height>
+       </rect>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>1920</width>
+        <height>1080</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextframe_button">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>590</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="thisframe_button">
+      <property name="geometry">
+       <rect>
+        <x>445</x>
+        <y>630</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="prevframe_button">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>590</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Prev</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="FrameSlider">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>590</y>
+        <width>160</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1685</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionopen_file"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>显示</string>
+    </property>
+    <addaction name="openanalyse_file"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionopen_file">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="openanalyse_file">
+   <property name="text">
+    <string>选择分析视频</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GLViewWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph.opengl</header>
+  </customwidget>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header>mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionopen_file</sender>
+   <signal>triggered()</signal>
+   <receiver>NumberButton</receiver>
+   <slot>select_path()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>398</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>calibration_button</sender>
+   <signal>clicked()</signal>
+   <receiver>NumberButton</receiver>
+   <slot>push_calibration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>462</x>
+     <y>614</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>prevframe_button</sender>
+   <signal>clicked()</signal>
+   <receiver>NumberButton</receiver>
+   <slot>push_prevframe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>368</x>
+     <y>644</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>446</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nextframe_button</sender>
+   <signal>clicked()</signal>
+   <receiver>NumberButton</receiver>
+   <slot>push_nextframe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>615</x>
+     <y>645</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>568</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>thisframe_button</sender>
+   <signal>clicked()</signal>
+   <receiver>NumberButton</receiver>
+   <slot>push_thisframe()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>485</x>
+     <y>686</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>325</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FrameSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>NumberButton</receiver>
+   <slot>change_value()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>645</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>show_court_2</sender>
+   <signal>clicked()</signal>
+   <receiver>NumberButton</receiver>
+   <slot>show_droppoint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>684</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>track_listWidget</sender>
+   <signal>itemDoubleClicked(QListWidgetItem*)</signal>
+   <receiver>NumberButton</receiver>
+   <slot>click_list()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>882</x>
+     <y>745</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>443</x>
+     <y>798</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openanalyse_file</sender>
+   <signal>triggered()</signal>
+   <receiver>NumberButton</receiver>
+   <slot>videoprossing()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>573</x>
+     <y>410</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>select_path()</slot>
+  <slot>show_image_slider()</slot>
+  <slot>next()</slot>
+  <slot>choice_frame_by_number()</slot>
+  <slot>push_calibration()</slot>
+  <slot>show_badminton_court()</slot>
+  <slot>push_prevframe()</slot>
+  <slot>push_nextframe()</slot>
+  <slot>push_thisframe()</slot>
+  <slot>change_value()</slot>
+  <slot>show_badminton_track()</slot>
+  <slot>show_droppoint()</slot>
+  <slot>videoprossing()</slot>
+  <slot>click_list()</slot>
+  <slot>select()</slot>
+ </slots>
+</ui>
