@@ -1,0 +1,8 @@
+USAGE: python opt_flow.py [<video_source>]
+
+Keys:
+ 1 - toggle HSV flow visualization
+ 2 - toggle glitch
+
+Keys:
+    ESC    - exit
