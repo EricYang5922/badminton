@@ -1,0 +1,1 @@
+from .models import FAN, FAN_light
