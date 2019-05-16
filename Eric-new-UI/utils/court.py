@@ -24,7 +24,7 @@ class CourtWidge():
         mpl.rcParams['axes.unicode_minus'] = False # 解决保存图像是负号'-'显示为方块的问题
         self.w = gl_widge
         self.plt_w = plt_widget
-        self.plt_w.plot()
+        #self.plt_w.plot()
         self.plt_track = None
         self.badminton_model = self.get_badminton_model()
         self.badminton_item_list, self.track_item_list, self.point_item_list = [], [], []

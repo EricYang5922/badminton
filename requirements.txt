@@ -1,0 +1,12 @@
+numpy
+scipy
+PyQt5
+pyqtgraph
+matplotlib
+opencv-python
+Pillow
+PyOpenGL
+pytorch
+torchvision
+tqdm
+scikit-image
